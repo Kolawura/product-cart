@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Container from "./components/Container";
-import myData from "./assets/data.json";
+import myData from "../data/data.json";
 import Cart from "./components/Cart";
 import Confirm from "./components/Confirm";
 function App() {

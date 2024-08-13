@@ -47,7 +47,7 @@ const Cart = ({ myData, setUpdatedData, confirmOrder }) => {
                       </div>
                     </div>
                     <div
-                      className="border rounded-full border-gray-400 text-gray-400 p-1"
+                      className="border rounded-full border-gray-400 hover:border-black  text-gray-400 hover:text-black p-1"
                       onClick={() => {
                         deleteOrder(item.name);
                       }}

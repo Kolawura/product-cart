@@ -10,7 +10,7 @@ const Confirm = ({ myData }) => {
   console.log(myData);
   return (
     <div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-10">
-    <div className="bg-white rounded-lg p-6 w-full h-full mt-52 md:w-1/3 md:h-auto md:mt-0">
+    <div className="bg-white rounded-lg p-6 w-full h-full mt-48 md:w-1/3 md:h-auto md:mt-0">
       <div>
         <svg
           width="48"
@@ -33,11 +33,11 @@ const Confirm = ({ myData }) => {
         <h1 className="text-3xl font-bold">Order Confirmed</h1>
         <p className="text-gray-400">We hope you enjoy your food!</p>
       </div>
-      <div className="bg-Rose-50 rounded-md px-4 py-2">
-        <div>
+      <div className="bg-Rose-50 rounded-md ">
+        <div className="max-h-64 overflow-y-auto px-4 py-2">
           {myOrderData.map((item) => {
             return (
-              <div key={item.name}>
+              <div key={item.name} >
                 <div className="flex justify-between py-4 items-center">
                   <div className="flex items-center gap-4">
                     <div className="w-10 h-10">
@@ -64,7 +64,7 @@ const Confirm = ({ myData }) => {
             );
           })}
         </div>
-        <div className=" flex justify-between py-6">
+        <div className=" flex justify-between py-6 px-4">
           <p className="text-gray-600">Order Total</p>
           <h1 className="font-bold text-3xl text-black">
             ${totalOrderPrice.toFixed(2)}
