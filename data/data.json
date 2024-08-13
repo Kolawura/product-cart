@@ -1,7 +1,7 @@
 [
     {
        "image": {
-           "thumbnail": "/product-cart/assetsimages/image-waffle-thumbnail.jpg",
+           "thumbnail": "/product-cart/assets/images/image-waffle-thumbnail.jpg",
            "mobile": "/product-cart/assets/images/image-waffle-mobile.jpg",
             "tablet": "/product-cart/assets/images/image-waffle-tablet.jpg",
             "desktop": "/product-cart/assets/images/image-waffle-desktop.jpg"

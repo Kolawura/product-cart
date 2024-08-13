@@ -104,7 +104,7 @@ const Cart = ({ myData, setUpdatedData, confirmOrder }) => {
               </p>
             </div>
             <button
-              className="bg-Red w-full rounded-full py-4 mt-8 text-gray-100"
+              className="bg-Red hover:brightness-75 w-full rounded-full py-4 mt-8 text-gray-100"
               onClick={() => confirmOrder()}
             >
               Confirm Order

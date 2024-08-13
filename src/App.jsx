@@ -39,9 +39,13 @@ function App() {
 
   const confirmOrder = ()=>{
     setOrderConfirm(true)
-    setTimeout(() => {
-      setOrderConfirm(false)
-    }, 10000);
+  }
+  const startNewOrder = ()=>{
+    const updateData = myData.map((item) => {
+      return { ...item, order: 0};
+    });
+    setData(updateData);
+    setOrderConfirm(false)
   }
 
   return (<>
@@ -50,7 +54,7 @@ function App() {
       <Container myData={data} addOrder={addOrder} subOrder={subOrder} />
       <Cart myData={data} setUpdatedData={setUpdatedData} confirmOrder={confirmOrder} />
     </div>
-     {orderConfirm && <Confirm myData={data} />}
+     {orderConfirm && <Confirm myData={data} startNewOrder={startNewOrder} />}
     </>
   );
 }

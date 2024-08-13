@@ -29,7 +29,7 @@ const Container = ({ myData, subOrder, addOrder }) => {
                   />
                 </picture>
                 {item.order ? (
-                  <button className="flex w-auto items-center gap-1 rounded-full bg-Red absolute left-1/2 bottom-[-15px] transform -translate-x-1/2 py-2 md:py-2.5 px-3 md:px-4.5 text-white">
+                  <div className="flex w-auto items-center gap-1 rounded-full bg-Red absolute left-1/2 bottom-[-22px] transform -translate-x-1/2 py-2 md:py-2.5 px-3 md:px-4.5 text-white">
                     <div
                       className="mr-6 p-1 text-white border-solid border-2 rounded-full border-white hover:bg-white hover:text-Red "
                       onClick={() => {
@@ -70,13 +70,13 @@ const Container = ({ myData, subOrder, addOrder }) => {
                         />
                       </svg>
                     </div>
-                  </button>
+                  </div>
                 ) : (
-                  <button
+                  <div
                     onClick={() => {
                       addOrder(id);
                     }}
-                    className="flex items-center text-gray-950 hover:text-Red gap-1 rounded-full border border-gray-400 hover:border-Red bg-white absolute left-1/2 bottom-[-15px] transform -translate-x-1/2 py-2 md:py-3 px-3 md:px-5 md:text-base text-sm"
+                    className="flex items-center text-gray-950 hover:text-Red gap-1 rounded-full border border-gray-400 hover:border-Red bg-white absolute left-1/2 bottom-[-22px] transform -translate-x-1/2 py-2 md:py-3 px-3 md:px-5 md:text-base text-sm"
                   >
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -96,10 +96,8 @@ const Container = ({ myData, subOrder, addOrder }) => {
                         </clipPath>
                       </defs>
                     </svg>
-                    <span className="font-semibold text-sm ">
-                      Add to Cart
-                    </span>
-                  </button>
+                    <span className="font-semibold text-sm ">Add to Cart</span>
+                  </div>
                 )}
               </div>
               <div className="py-6">
