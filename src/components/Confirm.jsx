@@ -8,8 +8,8 @@ const Confirm = ({ myData, startNewOrder }) => {
   }, 0);
   console.log(myData);
   return (
-    <div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-10">
-      <div className="flex flex-col gap-6 bg-white rounded-lg py-10 px-6 w-full mt-28 sm:w-2/3 lg:w-1/3 md:h-auto sm:mt-0">
+    <div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-end md:items-center z-10">
+      <div className="flex flex-col gap-6 bg-white rounded-lg py-10 px-6 w-full h-fit -top-1/2 md:w-2/3 lg:w-1/3">
         <div>
           <svg
             width="48"
